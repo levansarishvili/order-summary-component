@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e8ff;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-position-y: -100px;
+  background-repeat: no-repeat;
+
+  font-family: Red Hat Display;
+}
+
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: hidden;
+
+  margin: 102px auto;
+  width: 450px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+}
+
+.illustration-hero {
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 45px;
+}
+
+.order-header {
+  color: #1f2e55;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0 48px 17px 48px;
+}
+
+.order-text {
+  color: #717fa6;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  margin: 0 48px 20px 48px;
+}
+
+.order-plan {
+  display: flex;
+  flex-shrink: 0;
+
+  align-items: center;
+
+  border-radius: 11px;
+  background: #f7f9ff;
+  margin: 0 48px 32px 48px;
+  padding: 25px 24px;
+  width: 354px;
+  height: 98px;
+}
+
+.music-icon {
+  margin-right: 20px;
+}
+
+.annual-plan {
+  margin-right: 94px;
+}
+
+.annual-plan-text {
+  color: #1f2e55;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+
+.annual-plan-price {
+  color: #717fa6;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.change-link {
+  color: #382ae1;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.payment-btn {
+  width: 354px;
+  height: 50px;
+  border-radius: 11px;
+  background: #382ae1;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0 48px 32px 48px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  color: #717fa6;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  border: none;
+  margin: 0 178px 48px 176px;
+}

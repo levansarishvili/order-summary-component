@@ -1,7 +1,7 @@
 # Links
 
 - Solution URL: (https://github.com/levani-sarishvili/order-summary-component.git)
-- Live Site URL: ()
+- Live Site URL: (https://order-summary-component-lsarishvili.netlify.app/)
 
 # Built with
 

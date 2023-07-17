@@ -1,94 +1,96 @@
+/* || GENERAL CSS */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #e0e8ff;
-  background-image: url(/images/pattern-background-desktop.svg);
-  background-size: cover;
-  background-position-y: -400px;
-  background-repeat: no-repeat;
   height: 100vh;
-
   font-family: Red Hat Display;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.order-summary {
+/* || MAIN CSS */
+
+.card {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   overflow: hidden;
 
-  max-width: 450px;
-  border-radius: 20px;
+  max-width: 32.7rem;
+  border-radius: 2rem;
   background: #fff;
-  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+  box-shadow: 0 4rem 4rem -2rem rgba(13, 48, 189, 0.15);
 }
 
-.illustration-hero {
-  border-radius: 20px 20px 0px 0px;
-  margin-bottom: 45px;
+.card__img {
+  border-radius: 2rem 2rem 0 0;
+  margin-bottom: 3.2rem;
 }
 
-.order-header {
+.card__header {
   color: #1f2e55;
   text-align: center;
-  font-size: 28px;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  margin: 0 48px 17px 48px;
+  margin: 0 3.2rem 1.6rem 3.2rem;
 }
 
-.order-text {
+.card__text {
   color: #717fa6;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
-  margin: 0 48px 20px 48px;
+  line-height: 2.5rem; /* 162.5% */
+  margin: 0 3.2rem 2.4rem 3.2rem;
 }
 
-.order-plan {
+.card__plan-box {
   display: flex;
-  flex-shrink: 0;
-
   align-items: center;
+  justify-content: center;
 
-  border-radius: 11px;
-  background: #f7f9ff;
-  margin: 0 48px 32px 48px;
-  padding: 25px 24px;
-  width: 354px;
-  height: 98px;
+  border-radius: 1.1rem;
+  background-color: #f7f9ff;
+  margin: 0 2.4rem 2.4rem 2.4rem;
+  padding: 1.7rem 1.6rem 1.6rem 1.6rem;
+  width: 27.9rem;
+  /* height: 98px; */
 }
 
 .music-icon {
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 
 .annual-plan {
-  margin-right: 94px;
+  margin-right: 4.2rem;
 }
 
 .annual-plan-text {
   color: #1f2e55;
-  font-size: 16px;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  margin-bottom: 6px;
+  margin-bottom: 0.3rem;
 }
 
 .annual-plan-price {
   color: #717fa6;
-  font-size: 16px;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -96,7 +98,7 @@ body {
 
 .change-link {
   color: #382ae1;
-  font-size: 14px;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -104,34 +106,35 @@ body {
 }
 
 .payment-btn {
-  width: 354px;
-  height: 50px;
-  border-radius: 11px;
+  width: 27.9rem;
+  height: 5rem;
+  border-radius: 1.1rem;
   background: #382ae1;
-  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+  box-shadow: 0 2rem 2rem 0 rgba(56, 42, 225, 0.19);
   color: #fff;
   text-align: center;
-  padding: 15px 0;
-  font-size: 15px;
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  margin: 0 48px 32px 48px;
+  margin: 0 2.4rem 2.4rem 2.4rem;
   cursor: pointer;
 }
 
 .cancel-btn {
   color: #717fa6;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
   border: none;
-  margin: 0 178px 48px 176px;
+  margin: 0 11.6rem 3.2rem 11.5rem;
   cursor: pointer;
 }
 
-/* hover effects */
+/* || HOVER STATES */
+
 .change-link:hover {
   color: #766cf1;
   text-decoration: none;
@@ -143,4 +146,59 @@ body {
 
 .cancel-btn:hover {
   color: #1f2e55;
+}
+
+/* || MEDIA QUERIES */
+
+@media only screen and (min-width: 375px) {
+  .card {
+    max-width: 45rem;
+  }
+
+  .card__img {
+    margin-bottom: 1.5rem;
+  }
+
+  .card__header {
+    font-size: 2.8rem;
+    margin: 0 4.8rem 1rem 4.8rem;
+  }
+
+  .card__text {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin: 0 4.8rem 1.5rem 4.8rem;
+  }
+
+  .card__plan-box {
+    width: 35.4rem;
+    padding: 2.5rem 2.4rem;
+    margin: 0 4.8rem 2.5rem 4.8rem;
+  }
+
+  .annual-plan {
+    margin-right: 6.8rem;
+  }
+
+  .annual-plan-text {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .annual-plan-price {
+    font-size: 1.6rem;
+  }
+
+  .change-link {
+    font-size: 1.4rem;
+  }
+
+  .payment-btn {
+    width: 35.4rem;
+    margin: 0 4.8rem 2.5rem 4.8rem;
+  }
+
+  .cancel-btn {
+    margin: 0 17.8rem 3rem 17.6rem;
+  }
 }
